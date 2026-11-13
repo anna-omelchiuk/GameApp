@@ -1,0 +1,11 @@
+﻿@model IEnumerable<GameApp.Models.UserScore>
+
+<div>
+    <h3>Top 5 Players</h3>
+    <ul>
+        @foreach (var user in Model)
+        {
+            <li>@user.Username - @user.Score points</li>
+        }
+    </ul>
+</div>
